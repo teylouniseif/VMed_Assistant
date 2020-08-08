@@ -1,0 +1,6 @@
+# Set your own project id here
+PROJECT_ID = 'your-google-cloud-project'
+from google.cloud import bigquery
+bigquery_client = bigquery.Client(project=PROJECT_ID)
+from google.cloud import storage
+storage_client = storage.Client(project=PROJECT_ID)
