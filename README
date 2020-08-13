@@ -1,7 +1,7 @@
 aill-v1-vma
 Virtual Medical Assistant
 
-Using doctor-patient conversations to fill out medical forms with examples. Notebook code can be run as is.
+Using doctor-patient conversations to fill out medical forms with examples.
 
 The web app extracts video from medical video conversations, and outputs a file containing information
 about the last diagnosis and the medication taken. The video needs to be in the english language.
