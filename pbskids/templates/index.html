@@ -1,0 +1,30 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block content %}
+  <form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table>
+    {{ form.as_p }}
+    </table>
+    <input type="submit">
+  </form>
+{% endblock %}
+
+
+{% block graph %}
+    {% if graph.image != None %}
+        <img src="{% static graph.image.url  %}" alt="MISTGAME analytics">
+    {% else %}
+        <img src="{% static 'img/example.png' %}" alt="MISTGAME analytics">
+    {% endif %}
+{% endblock %}
+<!--<img src="{{ MEDIA_URL }}{{ image.imgfile.name }}"></img>!-->
+
+{% block retrievebutton %}
+<form action="#" method="get">
+{% csrf_token %}
+ <input type="submit" class="btn" value="Click here!" name="mybtn" style="color:black">
+</form>
+{% endblock %}
+

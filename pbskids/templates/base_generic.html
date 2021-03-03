@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+    <title>Home - Wiseear</title>
+    {% load static %}
+    <link rel="stylesheet" href=" {% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/simple-line-icons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Contact-Form-Clean.css' %}">
+    <link rel="stylesheet" href="{% static 'css/untitled.css' %}">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top" style="color:#1100BB;">Wiseear</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler float-right" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#download"></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#features"></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact" style="color:#1100BB;">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background:url({% static 'img/doctor_patient_care.jpg' %}) no-repeat center center fixed ;height:100%;width:100%;background-size:cover;">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="mx-auto header-content">
+                        <h1 class="mb-5a" style="color:Darkblue">Build a better healthcare experience.</h1>
+                    </div>
+                </div>
+                <div class="col-lg-5 my-auto">
+                    <div class="iphone-mockup"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="border rounded-0 download text-center" id="download" style="background-color:aliceblue">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h2 class="section-heading">Wiseear aims to remove the bureaucratic burden from physicians and help them focus on medical care
+              and human interaction with their patients.</h2>
+                    <p></p>
+                    <div class="badges"><a class="badge-link" href="#"></a><a class="badge-link" href="#"></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>What we do</h2>
+                <p class="text-muted">Physicians are pressured to spend less direct time with their patients, because of admistrative
+              tasks and complex healthcare systems. This leads to issues of trust, misdiagnosis and unavailability of medical care. Wiseear provides an answer to this.
+		Our solution uses state of the artificial intelligence to analyze, document and classify consultations, letting the physician focus entirely on the patient.</p>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 my-auto">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device" style="background-image:url( {%  static 'img/virtual_doctor.jpg' %});">
+                                <div class="screen"><img class="img-fluid device-mockup iphone6_plus portrait white"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 my-auto">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="feature-item"><i class="icon-screen-smartphone text-primary"></i>
+                                    <h3>Goal</h3>
+                                    <p class="text-muted">Make the consultation as seamless as possible.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="feature-item"><i class="icon-magnifier-add text-primary"></i>
+                                    <h3>Approach</h3>
+                                    <p class="text-muted">Analyze the physician patient interaction.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="feature-item"><i class="icon-chart text-primary"></i>
+                                    <h3>Result</h3>
+                                    <p class="text-muted">Simplify paperwork and assist physician during consultation.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="feature-item"><i class="icon-rocket text-primary"></i>
+                                    <h3>Vision</h3>
+                                    <p class="text-muted">Approach focused on improving experience of both physician and patient.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+<section id="data" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Demo</h2>
+          <p class="lead">We expect an mp4 file containing a conversation between a physician and his patient. The system will then extract the answers to the following questions: What medication is being taken and when was the last diagnosis? </p>
+          {% block content %}{% endblock %}
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="result">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Get Results</h2>
+          {% block retrievebutton %}{% endblock %}
+          {% block medData %}{% endblock %}
+          <!--<p class="lead"> Fill up later </p>
+          {% load static %}
+          {% block graph %}{% endblock %} -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <section class="cta" style="background-image:url({% static 'img/Direct-primary-care-doctor.jpeg' %});">
+        <div class="cta-content">
+            <div class="container">
+                <h2>Want to contribute?<br>Let's talk!<br></h2><a class="btn btn-outline-warning btn-xl js-scroll-trigger" role="button" href="#contact">CONTACT US!</a></div>
+        </div>
+        <div class="overlay"></div>
+    </section>
+    <section id="contact" class="contact" style="background-color:lightblue">
+        <div class="container" style="background-color:lightblue">
+            <h2><span>Follow us for more!</span></h2>
+            <ul class="list-inline list-social">
+                <li class="list-inline-item social-twitter"><a href="https://www.facebook.com/Wiseear-101402634617204/"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item social-facebook"></li>
+                <li class="list-inline-item social-google-plus"></li>
+            </ul>
+        </div><!--<a href="#"><i class="fa fa-twitter"></i></a>--></section>
+    <div class="contact-clean">
+        <form id="ContactForm" method="post">
+            <h2 class="text-center">Contact us</h2>
+            <div class="form-group"><input class="form-control form-control-name" type="text" name="name" placeholder="Name"></div>
+            <div class="form-group"><input class="form-control form-control-email" type="email" name="email" placeholder="Email"></div>
+            <div class="form-group"><textarea class="form-control form-control-message" name="message" placeholder="Message" rows="14"></textarea></div>
+            <div class="form-group"><button @click.prevent="javascript: submit();" class="btn btn-primary" type="submit">send </button>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+new Vue({
+  el: '#ContactForm',
+  data: {
+    sent: null
+  },
+  methods: {
+    submit: function() {
+      var vm = this;
+      var $form = $('#ContactForm');
+
+      var $name = $form.find('.form-control-name'),
+          $email = $form.find('.form-control-email'),
+          $message = $form.find('.form-control-message');
+        
+      var realname=$email.val();
+
+      $.post('contact.php', {
+        method: 'email',
+        name: $name.val(),
+        email: $email.val(),
+        message: $message.val()
+      })
+      .then(function(response) {
+        if (response == 'ok') {
+          vm.sent = true;
+          $name.val('');
+          $email.val('');
+          $message.val('');
+        } else {
+          vm.sent = true;
+        }
+      });
+    }
+  }
+});
+</script></div>
+        </form>
+    </div><footer>
+    <div class="container">
+        <p>© Wiseear 2018. All Rights Reserved.</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">FAQ</a></li>
+        </ul>
+    </div>
+</footer>
+{% load static %}
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="{% static 'js/new-age.js' %}"></script>
+</body>
+
+</html>

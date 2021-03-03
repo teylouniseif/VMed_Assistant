@@ -1,0 +1,18 @@
+.mb-5a {
+  color: #1100BB;
+}
+
+header.masthead {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: #fff;
+  background: #7b4397;
+  background: linear-gradient(270deg,#7b4397,#dc2430);
+  display: flex;
+  align-items: center;
+}
+
